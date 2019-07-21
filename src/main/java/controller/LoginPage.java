@@ -36,7 +36,7 @@ public class LoginPage {
     @FindBy(id="customer_firstname")
     WebElement customerFirstname;
     @FindBy(id="customer_lastname")
-    WebElement customeLstname;
+    WebElement customeLastname;
     @FindBy(id="email")
     WebElement customerSignupEmail;
 
@@ -99,7 +99,7 @@ public class LoginPage {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
         nameTitle.click();
         customerFirstname.sendKeys(firstname);
-        customeLstname.sendKeys(lastname);
+        customeLastname.sendKeys(lastname);
         customerSignupEmail.sendKeys(email);
         customerSignupPass.sendKeys(password);
         signupRegister.click();
