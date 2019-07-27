@@ -30,4 +30,39 @@ public class homePageTest extends ScriptBase {
 
 
     }
+    @Test
+    public void verifyPopular() {
+        homePage = new HomePage(driver);
+        homePage.PopularBestsellers("homefeatured",driver);
+
+
+    }
+    @Test
+    public void verifyBestsellers() {
+        homePage = new HomePage(driver);
+        homePage.PopularBestsellers("blockbestsellers",driver);
+
+
+    }
+    @Test
+    public void verifySpecial() {
+        homePage = new HomePage(driver);
+        homePage.InformationTree("Specials",driver);
+
+
+    }
+    @Test
+    public void verifyNewProduct() {
+        homePage = new HomePage(driver);
+        homePage.InformationTree("New products",driver);
+
+
+    }
+    @Test
+    public void verifyBestSellers() {
+        homePage = new HomePage(driver);
+        homePage.InformationTree("Best sellers",driver);
+
+
+    }
 }
