@@ -25,5 +25,23 @@ public void searchBox(String input, WebDriver driver,String quantity){
         driver.findElement(By.xpath("//*[@id='center_column']//span[contains(text(),'"+quantity+" results have been found.')]")).isDisplayed();
 
 }
+    public void searchBoxTwo(String input, WebDriver driver,String quantity){
+        searchQuerytop.clear();
+        searchQuerytop.sendKeys(input);
+        submitbutton.click();
+        driver.findElement(By.xpath("//*[@id=\"center_column\"]//span[contains(text(),'7 results have been found.')]")).isDisplayed();
 
+    }
+
+    public void PopularBestsellers(String types , WebDriver driver){
+
+        driver.findElement(By.xpath("//*[@id='home-page-tabs']/li/a[@class='"+types+"']")).isDisplayed();
+
+    }
+
+    public void InformationTree(String title , WebDriver driver){
+
+        driver.findElement(By.xpath("//*[@id='block_various_links_footer']/ul/li/a[@title='"+title+"']")).isDisplayed();
+
+    }
 }
